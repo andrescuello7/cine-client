@@ -1,0 +1,26 @@
+.Login {
+  background: url("https://static.americadigital.com/wp-content/uploads/2020/04/000_1qb1dz-1-1024x570.jpg");
+  background-size: cover;
+  padding: 9%;
+  display: flex;
+  justify-content: center;
+}
+.LoginCard {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  width: 40%;
+  padding: 3%;
+  border-radius: 12px;
+}
+@media (max-width: 700px) {
+  .LoginCard {
+    margin: 35% 0px;
+    width: 95%;
+    font-size: 20px;
+    padding: 8%;
+  }
+  .Login {
+    padding: 0%;
+  }
+}
