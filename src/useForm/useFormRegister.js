@@ -3,12 +3,16 @@ import { getStorageArray, setStorage } from "../utils/utils";
 
 const useFormRegister = (submit) => {
   const [validated, setValidated] = useState(false);
-
+  const generateId = function () {
+    return "_" + Math.random().toString(36).substr(2, 9);
+  };
   const [ouput, setOuput] = useState({});
   const [input, setInput] = useState({
     name: "",
     password: "",
     email: "",
+    cuenta: "",
+    id: generateId(),
   });
   const handleSubmit = (event) => {
     const form = event.target;
@@ -32,6 +36,7 @@ const useFormRegister = (submit) => {
   return {
     handleSubmit,
     handleChange,
+    generateId,
     validated,
   };
 };

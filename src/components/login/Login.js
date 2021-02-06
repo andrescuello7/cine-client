@@ -8,7 +8,7 @@ const Login = () => {
     name: "",
     password: "",
   };
-  const { handleOnChange, handleSubmit, nameUserDate, user, array } = useForm(
+  const { handleOnChange, handleSubmit, nameUserDate, user } = useForm(
     userSesion
   );
   return (

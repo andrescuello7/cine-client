@@ -1,0 +1,49 @@
+.Total {
+  color: rgba(178, 178, 179, 0.712);
+  width: 200px;
+  text-align: center;
+}
+.TotalCuenta {
+  margin: 10% 0px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cuentas {
+  margin: 10% 0px;
+}
+.cuenta {
+  margin: 7% 0px;
+}
+.AgregarButton {
+  margin: 1%;
+  padding: 70px 85px;
+  border: 1px solid rgb(65, 63, 63);
+  font-size: 3rem;
+}
+
+@media (max-width: 780px) {
+  .Total {
+    color: rgba(178, 178, 179, 0.712);
+    width: 100px;
+    text-align: center;
+  }
+  .TotalCuenta {
+    margin: 50% 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .cuentas {
+    margin: 10% 0px;
+  }
+  .cuenta {
+    margin: 11% 0px;
+  }
+  .AgregarButton {
+    margin: 0%;
+    padding: 22px 40px;
+    border: 1px solid rgb(65, 63, 63);
+    font-size: 3rem;
+  }
+}
