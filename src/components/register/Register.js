@@ -12,7 +12,6 @@ const Register = () => {
     email: "",
   });
   const { handleChange, handleSubmit, validated } = useFormRegister(input);
-
   return (
     <div className="Login">
       <div className="LoginCard">
@@ -62,7 +61,7 @@ const Register = () => {
               <Button type="submit">Guardas Datos</Button>
             </div>
             <div>
-              <Nav.Link as={NavLink} to="/login" exact>
+              <Nav.Link as={NavLink} to="/" exact>
                 <i>Volver atras</i>
               </Nav.Link>
             </div>

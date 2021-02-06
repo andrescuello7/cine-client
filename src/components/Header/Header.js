@@ -2,39 +2,26 @@ import "../Header/Header.css";
 import Modal from "../Header/modal/modal";
 import useFormHome from "../../useForm/useFormHome";
 import CardPeli from "../ApiMovies/CardPeli";
+import Navbar from "../Navbar/NavbarOfHeader";
 
-export default function Header() {
-  const { guardar, subir, peli } = useFormHome();
+const Header = () => {
+  const {
+    guardar,
+    subir,
+    peli,
+    pageClick,
+    pageSubmit,
+    sesion,
+    CloseSession,
+  } = useFormHome();
   const mapKey = peli.map((peli, i) => (
     <CardPeli Title={peli.Title} Imagen={peli.Poster} />
   ));
+  console.log(sesion);
   return (
     <div>
-      <header>
-        <a href="">
-          <img
-            className="logo"
-            src="https://logos-marcas.com/wp-content/uploads/2020/04/Netflix-Logo.png"
-            alt=""
-          />
-        </a>
-        <ul className="navigation">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Tv Shows</a>
-          </li>
-          <li>
-            <a href="#">Movies</a>
-          </li>
-          <li>
-            <a href="/Register">Register</a>
-          </li>
-          <li>
-            <a href="/Login">Login</a>
-          </li>
-        </ul>
+      <header className="d-flex">
+        <Navbar />
         <div className="search">
           <input type="text" placeholder="Search" onChange={guardar} />
           <a onClick={subir}>
@@ -44,7 +31,7 @@ export default function Header() {
       </header>
       <div className="banner">
         <img
-          src="https://ca-times.brightspotcdn.com/dims4/default/5464a5f/2147483647/strip/true/crop/2275x1076+0+0/resize/1486x703!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fdf%2F53%2Fc2a293c9430c91157f513ab03916%2Fla-photos-1staff-la-ca-mulan-movie-856.JPG"
+          src="https://cadenaser00.epimg.net/ser/imagenes/2020/01/20/el_cine_en_la_ser/1579522687_599791_1579522970_noticia_normal_recorte1.jpg"
           className="bg"
         />
         <div className="content">
@@ -80,6 +67,20 @@ export default function Header() {
       <div>
         <div className="CardKeyPeli">{mapKey}</div>
       </div>
+
+      <div className="buttonsSigAnt">
+        <div className="m-2">
+          <button className="btn btn-dark" onClick={pageSubmit}>
+            <b>Anterior</b>
+          </button>
+        </div>
+        <div className="m-2">
+          <button className="btn btn-dark" onClick={pageClick}>
+            <b>Siguente</b>
+          </button>
+        </div>
+      </div>
     </div>
   );
-}
+};
+export default Header;

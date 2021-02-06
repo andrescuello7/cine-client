@@ -24,18 +24,26 @@
 }
 .CardDePeli {
   margin: 1%;
-  width: 20%;
-  background-color: rgba(4, 52, 83, 0.568);
+  width: 18%;
+  background-color: rgba(126, 125, 125, 0.568);
   border-radius: 1rem;
-  padding: 1%;
+  padding: 2px;
 }
+/* .titleCard {
+  width: 6%;
+  display: block;
+}
+.titleCard:hover {
+  display: none;
+  transform: translateY(10px);
+} */
 .CardKeyPeli {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 .imgPeli {
-  width: 90%;
+  width: 100%;
   border-radius: 1rem;
   border: solid 2px black;
 }
@@ -72,6 +80,10 @@
   background-color: #151616;
   padding: 2%;
 }
+.ModalMovie {
+  background-color: rgba(3, 3, 3, 0.952);
+  color: rgb(173, 173, 173);
+}
 @media (max-width: 700px) {
   .pad {
     width: 100%;
@@ -94,7 +106,7 @@
   .CardDePeli {
     margin: 1%;
     width: 45%;
-    background-color: rgba(4, 52, 83, 0.568);
+    background-color: rgba(126, 125, 125, 0.568);
     border-radius: 1rem;
     padding: 1%;
   }

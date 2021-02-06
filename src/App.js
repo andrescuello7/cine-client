@@ -6,7 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/HomePage";
 import Register from "./pages/RegisterPage";
+import Users from "./pages/UsersPage";
 import Login from "./pages/LoginPage";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -14,10 +16,14 @@ const App = () => {
       <Router>
         <Switch>
           <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/home">
+            <Home />
+            <Footer />
           </Route>
           <Route path="/register">
             <Register />
