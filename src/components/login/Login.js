@@ -2,15 +2,25 @@ import { Form, Button, Nav } from "react-bootstrap";
 import "./Login.css";
 import { NavLink } from "react-router-dom";
 import useForm from "../../useForm/useForm";
+import { useState } from 'react'
 
-const Login = () => {
+const Login = ({ loginAsAdmin }) => {
   const userSesion = {
     name: "",
     password: "",
   };
-  const { handleOnChange, handleSubmit, nameUserDate, user } = useForm(
+  const { handleOnChange, handleSubmit, user } = useForm(
     userSesion
   );
+  const handleOnAdmin = () => {
+    const idAdmin= user.name === 'pelis' && user.password === '123';
+    if (idAdmin) {
+      loginAsAdmin()
+      console.log('correcto')
+    }
+  };
+  handleOnAdmin()
+  
   return (
     <div className="Login">
       <div className="LoginCard">

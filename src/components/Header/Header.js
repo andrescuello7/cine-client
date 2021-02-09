@@ -31,7 +31,7 @@ const Header = () => {
       </header>
       <div className="banner">
         <img
-          src="https://cadenaser00.epimg.net/ser/imagenes/2020/01/20/el_cine_en_la_ser/1579522687_599791_1579522970_noticia_normal_recorte1.jpg"
+          src="https://images3.alphacoders.com/106/thumb-1920-1069056.jpg"
           className="bg"
         />
         <div className="content">

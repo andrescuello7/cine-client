@@ -1,5 +1,5 @@
 .Login {
-  background: url("https://static.americadigital.com/wp-content/uploads/2020/04/000_1qb1dz-1-1024x570.jpg");
+  background: url("https://gobioskop.xyz/wp-content/uploads/2021/01/bg.jpg");
   background-size: cover;
   padding: 9%;
   display: flex;
@@ -7,15 +7,15 @@
 }
 .LoginCard {
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.733);
   color: #fff;
-  width: 40%;
-  padding: 3%;
+  width: 50%;
+  padding: 6%;
   border-radius: 12px;
 }
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .LoginCard {
-    margin: 35% 0px;
+    margin: 35% 10%;
     width: 95%;
     font-size: 20px;
     padding: 8%;

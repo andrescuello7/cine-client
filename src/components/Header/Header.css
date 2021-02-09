@@ -120,7 +120,7 @@ header .logo img {
   font-size: 1em;
   font-weight: 300;
   line-height: 1.5em;
-  color: #fff;
+  color: rgb(39, 37, 37);
   margin: 5px 0 20px;
 }
 .banner .content .buttons {

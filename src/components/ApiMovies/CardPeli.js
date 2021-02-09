@@ -15,9 +15,6 @@ const CardPeli = (props) => {
           <div className="imgPeliTwo">
             <img className="imgPeli" src={props.Imagen} alt="" />
           </div>
-          {/* <div className="titleCard">
-            <p>{props.Title}</p>
-          </div> */}
         </div>
       </a>
       <Modal show={show} onHide={handleClose}>

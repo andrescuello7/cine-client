@@ -1,9 +1,9 @@
 import Login from "../components/login/Login";
 
-export default function LoginPage() {
+export default function LoginPage({ loginAsAdmin }) {
   return (
     <div>
-      <Login />
+      <Login loginAsAdmin={loginAsAdmin} />
     </div>
   );
 }

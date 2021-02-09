@@ -7,9 +7,11 @@ import {
   FormControl,
 } from "react-bootstrap";
 import useForm from "../../useForm/useForm";
+import NavbarAdmin from './NavbarAdmin'
 
 const NavbarOfHeader = () => {
-  const { array, handleOnSubmit, nameUserDate } = useForm();
+  const { array, handleOnSubmit, nameUserDate, user } = useForm();
+  console.log(user.name)
 
   return (
     <Navbar>
