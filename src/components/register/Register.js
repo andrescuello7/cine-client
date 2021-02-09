@@ -11,7 +11,8 @@ const Register = () => {
     password: "",
     email: "",
   });
-  const { handleChange, handleSubmit, validated } = useFormRegister(input);
+  const { handleChange, handleSubmit, validated, desabilitar, button } = useFormRegister(input);
+  
   return (
     <div className="Login">
       <div className="LoginCard">
@@ -53,12 +54,12 @@ const Register = () => {
             <Form.Check
               required
               label="Acepta los términos y condiciones"
-              feedback="You must agree before submitting."
+              feedback="You must agree before submitting." onClick={desabilitar}
             />
           </Form.Group>
           <div className="d-flex justify-content-center">
             <div>
-              <Button type="submit">Guardas Datos</Button>
+              <Button type="submit" disabled={button} >Guardas Datos</Button>
             </div>
             <div>
               <Nav.Link as={NavLink} to="/" exact>

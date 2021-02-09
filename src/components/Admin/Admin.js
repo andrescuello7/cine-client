@@ -14,7 +14,7 @@ export default function AdminPage() {
       ));
     console.log(datosUser)
   return (
-    <div>
+    <div className="CambioDeHeigth">
         <div className="Traer">
             <i>Cuentas De Usuarios</i>
             <>{Mostrar}</>

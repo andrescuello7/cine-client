@@ -2,6 +2,7 @@ import { useState } from "react";
 import { getStorageArray, setStorage } from "../utils/utils";
 
 const useFormRegister = (submit) => {
+  const [button, setButton]=useState(true)
   const [validated, setValidated] = useState(false);
   const generateId = function () {
     return "_" + Math.random().toString(36).substr(2, 9);
@@ -33,11 +34,20 @@ const useFormRegister = (submit) => {
     const objeto = { ...input, [name]: value };
     setInput(objeto);
   };
+  const desabilitar = () => {
+    if (button == true) {
+      setButton(false)
+    } else if (button == false){
+      setButton(true)
+    }
+  };
   return {
     handleSubmit,
     handleChange,
+    desabilitar,
     generateId,
     validated,
+    button,
   };
 };
 export default useFormRegister;

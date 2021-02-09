@@ -8,11 +8,6 @@ export default function CardCuenta(props) {
             <div>
                 {props.data.name}
             </div>
-            <div>
-                <Button href="/delete">
-                    Delete
-                </Button>
-            </div>
         </div>
     );
 }

@@ -1,14 +1,12 @@
-.Hola{
-    margin: 2%;
-    width: 100%;
-    padding: 1%;
-    border-radius: 0%;
-}
 .Datos{
     color: black;
 }
 .Traer{
-    background-color: rgba(255, 255, 255, 0.219);
-    padding: 1%;
+    padding: 2% 1%;
     width: 100%;
+    color: aliceblue;
+}
+.CambioDeHeigth{
+    background-color: rgba(255, 255, 255, 0.219);
+    height: 400px;
 }
