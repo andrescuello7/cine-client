@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Button, Form, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import useFormRegister from "../../useForm/useFormRegister";
-import { getStorageArray, setStorage } from "../../utils/utils";
 
 const Register = () => {
   const [input, setInput] = useState({

@@ -50,11 +50,11 @@ const Login = ({ loginAsAdmin }) => {
           <Form.Group controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Me echa un vistazo" />
           </Form.Group>
-          <Button className="btn btn-primary" type="submit">
+          <Button className="btn btn-primary w-100 mt-2" type="submit">
             <b>Iniciar Sesion</b>
           </Button>
         </Form>
-        <Nav.Link class="text-center" as={NavLink} to="/register">
+        <Nav.Link class="text-center mt-2" as={NavLink} to="/register">
           <i>Aun no tienes cuenta?, registrate gratuitamente</i>
         </Nav.Link>
       </div>

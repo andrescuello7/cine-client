@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { getStorageArray, setStorage } from "../utils/utils";
 
-const useFormRegister = (submit) => {
+const useFormRegister = () => {
   const [button, setButton]=useState(true)
   const [validated, setValidated] = useState(false);
   const generateId = function () {

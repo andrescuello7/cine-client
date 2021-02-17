@@ -14,8 +14,6 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(false);
-  console.log('is admin', isAdmin)
-
   return isAdmin ? <AdminRoutes /> : <UserRoutes loginAsAdmin={() => setIsAdmin(true)} />;
 };
 

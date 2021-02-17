@@ -15,13 +15,10 @@ export default function AdminPage() {
     console.log(datosUser)
   return (
     <div className="CambioDeHeigth">
-        <div className="Traer">
-            <i>Cuentas De Usuarios</i>
-            <>{Mostrar}</>
-        </div>
+        
         <div className="Traer">
             <i>Usuarios</i>
-            <>{MostrarUser}</>
+            <b>{MostrarUser}</b>
         </div>
     </div>
   );
